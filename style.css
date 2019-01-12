@@ -18,17 +18,18 @@
 	font-family: "4";
 	src:url(fonts/montserrat/Montserrat-UltraLight.otf);
 }
-body
+#page-top
 {
 	background-color: #fcf1e8;
 	/*background-image:url(images/final/background_without_color.png);
 	background-repeat: no-repeat;*/
-	
+	width: 100%;
+	height: 100%;
 }
 
  #mainNav
  {
- 	background-color:#fff;
+ 	min-height:56px;background-color:#fff;
  }
  #mainNav .navbar-toggler{font-size:80%;padding:.75rem;color:#64a19d;border:1px solid #64a19d}
  #mainNav .navbar-toggler:focus{outline:0}
@@ -162,7 +163,7 @@ body
 			  transform: scale(1.1);
 			   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 			}
-s
+
 			.box {
 				  
 				  transition: transform .1s; /* Animation */
