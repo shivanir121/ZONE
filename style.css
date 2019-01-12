@@ -53,6 +53,7 @@ body
  	{
  		padding:.5rem 0;color:rgba(255,255,255,.5)
  	}
+	 .style{font-size: 55px;}
  	#mainNav .nav-link{-webkit-transition:none;transition:none;padding:2rem 1.5rem;color:black;}/* rgba(255,255,255,.5);*/
  	#mainNav .nav-link:hover{color:rgba(255,255,255,.75)}
  	#mainNav .nav-link:active{color:#fff;}
