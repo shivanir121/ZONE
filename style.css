@@ -36,7 +36,7 @@
  #mainNav .navbar-brand{color:#161616;font-weight:700;padding:.9rem 0}
  #mainNav .navbar-nav .nav-item:hover{color:fade(white,80%);outline:0;background-color:transparent}
  #mainNav .navbar-nav .nav-item:active,#mainNav .navbar-nav .nav-item:focus{outline:0;background-color:transparent}
- @media (min-width:400px)
+ @media (min-width:92px)
  {
  	#mainNav
  	{
