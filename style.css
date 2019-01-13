@@ -1,29 +1,39 @@
 @font-face
 {
-	font-family: "1";
+	font-family: "bold";
 	src:url(fonts/montserrat/Montserrat-Bold.otf);
 }
 @font-face
 {
-	font-family: "2";
+	font-family: "thin";
     src:url(fonts/montserrat/Montserrat-Thin.ttf);
 }
 @font-face
 {
-	font-family: "3";
+	font-family: "light";
 	src:url(fonts/montserrat/Montserrat-Light.otf);
 }
 @font-face
 {
-	font-family: "4";
+	font-family: "ultra";
 	src:url(fonts/montserrat/Montserrat-UltraLight.otf);
+}
+@font-face
+{
+	font-family: "regular";
+	src:url(fonts/montserrat/Montserrat-Regular.otf);
+}
+@font-face
+{
+	font-family: "SemiBold";
+	src:url(fonts/montserrat/Montserrat-SemiBold.otf);
 }
 body
 {
 	background-color: #fcf1e8;
 	/*background-image:url(images/final/background_without_color.png);*/
-	/*background-repeat: no-repeat;
-	background-size: cover;*/
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
@@ -31,7 +41,7 @@ body
 
  #mainNav
  {
- 	min-height:56px;background-color:#fff;
+ 	min-height:56px;background-color:#ffb88c0f;
  }
  #mainNav .navbar-toggler{font-size: 80%;padding:.75rem;color: #ffb88c;border: 1px solid #ffb88c;}
  #mainNav .navbar-toggler:focus{outline:0;}
@@ -76,7 +86,7 @@ body
  	{
  		position:relative;
  		width:100%;
- 		height:auto;
+ 		height: -webkit-fill-available;
  		min-height:35rem;
  		padding:15rem 0;
  		background:-webkit-gradient(linear,left top,left bottom,from(rgba(22,22,22,.1)),color-stop(75%,rgba(22,22,22,.5)),to(#161616)),url(../img/bg-masthead.jpg);
@@ -85,21 +95,22 @@ body
  		background-position:bottom;background-repeat:no-repeat;background-attachment:scroll;background-size:cover}
  		.masthead h1
  		{
- 			font-family:'Varela Round';
+ 			font-family:'thin';
  			font-size:2.5rem;
  			line-height:2.5rem;
- 			letter-spacing:.8rem;
+ 			color: #ff9800;
+ 			/*letter-spacing:.8rem;
  			background:-webkit-linear-gradient(#FF5722,rgba(255,255,255,0));
- 			-webkit-text-fill-color:transparent;-webkit-background-clip:text;
+ 			-webkit-text-fill-color:transparent;-webkit-background-clip:text;*/
  		}
  		.masthead h2 
  		{
  			max-width:20rem;font-size:1rem
  		}
- 		@media (min-width:768px)
- 		{.masthead h1{font-size:4rem;line-height:4rem;}}
+ 		/*@media (min-width:768px)
+ 		{.masthead h1{font-size:4rem;line-height:4rem;}}*/
  		@media (min-width:992px){.masthead{/*height:100vh;*/padding:0;}
- 		.masthead h1{font-size:3.5rem;line-height:6.5rem;letter-spacing:.8rem;}
+ 		.masthead h1{/*font-size:3.5rem;line-height:6.5rem;*/letter-spacing:.8rem;}
  		.masthead h2{max-width:30rem;font-size:1.25rem;}}
  		.btn{-webkit-box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;box-shadow:0 .1875rem .1875rem 0 rgba(0,0,0,.1)!important;padding:1.25rem 2rem;font-family:'Varela Round';font-size:80%;text-transform:uppercase;letter-spacing:.15rem;border:0;} 		.btn{background-color:#ffb88c;}
  		.btn:hover{background-color:#4f837f;}
@@ -157,7 +168,7 @@ body
              }
              .footersec
              {
-                background-image:url(images/final/cup.png),url(images/2.png);
+                background-image:url(images/final/cup2.png),url(images/2.png);
                 background-size: 496px,cover;
                 background-repeat:no-repeat,repeat;
                 background-position:center,left top;
@@ -165,7 +176,7 @@ body
              }
              .footersec1/*for mobile version*/
              {
-                   background-image: url(images/final/cup.png),url(images/2.png);
+                   background-image: url(images/final/cup2.png),url(images/2.png);
 				    background-size: 222px,cover;
 				    background-repeat: no-repeat,repeat;
 				    background-position: right top,left top;
@@ -190,26 +201,7 @@ s
 				  transition: transform .1s; /* Animation */
 				}
              
-             /*fade in left*/
-             .img1 {
-				  
-				  -webkit-animation-name: mymove; /* Safari 4.0 - 8.0 */
-				  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
-				  animation-name: mymove;
-				  animation-duration: 1s;
-				}
-
-				/* Safari 4.0 - 8.0 */
-				@-webkit-keyframes mymove {
-				  from {left: 0px;}
-				  to {left: 200px;}
-				}
-
-				@keyframes mymove {
-				  from {left: 0px;}
-				  to {left: 200px;}
-				}
-				/*end of hover effects*/
+            
 
 				/*portfolio*/
 				   
@@ -265,7 +257,7 @@ s
 				      }
 				      .contain .box1 .det .cont h2
 				      {
-				        margin: 0;
+				        
 				        padding: 0;
 				        font-size: 20px;
 				        color: #ffb88c; 
@@ -279,3 +271,17 @@ s
 				      {
 				      	width: 100%;
 				      }
+
+				      .portfoliostyle
+				      {
+ 						    margin-left: 35px;
+    						margin-top: 24px;
+				      } 
+				       .portfoliostyle1
+				      {
+ 						    margin-left: 35px;
+    						
+				      } 
+				               
+				  
+				      
