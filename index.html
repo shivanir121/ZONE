@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>HAPYZONE  </title>
+        <title>HAPYZONE</title>
+        <link rel="icon" href="images/logo/4.png">
         <meta name="description" content="">
         <meta name="author" content="">
         <!-- meta quries -->
@@ -28,7 +29,23 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">HAPYZONE</a>
+                <a id="myP" class="js-scroll-trigger navbar-brand" href="#page-top">
+                  <!-- <img src="" width="20%" class="myP"> -->
+                  <img id="myImage"  src="images/logo/one.png" width="120px">
+                </a>
+                <script>
+                    $(function () { 
+                        $(window).scroll(function () {
+                            if ($(this).scrollTop() > 50) { 
+                                $('#myImage').attr('src',"images/logo/oneoran.png");
+                            }
+                            if ($(this).scrollTop() < 50) { 
+                                $('#myImage').attr('src',"images/logo/one.png");
+                            }
+                        })
+                    });
+                </script>
+                
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i> 
@@ -48,7 +65,7 @@
                             <a class="nav-link js-scroll-trigger" href="#clients">Clientele</a>
                             </li> -->
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#signup">Contact Us</a>
+                            <a class="nav-link js-scroll-trigger" href="#signup">Contact </a>
                         </li>
                     </ul>
                 </div>
@@ -66,20 +83,10 @@
                     <div class="col-lg-5">
                         <div class="text-center headings">
                             <!-- add container and margin -->
-                            <h1 class="my-0 text-left text-uppercase" >HapyZone</h1>
-                            <h2 class="mx-auto text-white text-left mt-2 mb-5 ">
-                                <span class="type1 has-text-black">
-                                    <script type="text/javascript" src="js/typed.js"></script>
-                                    <script type="text/javascript">
-                                        var typed = new Typed('.type1', {
-                                        strings: [
-                                        "First sentence", "Think Big. We make IT, possible!",
-                                        "Achieving success in the digital world is hard. We make it easier"],
-                                        typeSpeed: 30,
-                                        backSpeed:30,
-                                        loop:true
-                                        });
-                                    </script>
+                            <h1 class="my-0 has-text-centered text-uppercase" >hapyzone</h1>
+                            <h2 class="mx-auto text-white text-center mt-2 mb-5 ">
+                                <span class=" has-text-black text-center" style="font-family:light";>
+                                   Achieving success in the digital world is hard. We make it easier 
                                 </span>
                             </h2>
                             <a href="#about" class="btn text-danger js-scroll-trigger" style="background-color: #ffffff";>Get Started</a>
@@ -164,11 +171,11 @@
                     </div>
                     <div class="col-lg-10 ">
                         <br><br>
-                        <p style="font-size: 18px;"><strong style="font-size: 20px">Our work is guided by our values:</strong><br>
+                        <p style="font-size: 18px;font-family: cursive;"><strong style="font-size: 20px">Our work is guided by our values:</strong><br>
                             placing our clients’ needs first, <br>applying foresight to each engagement and working as a team. <br>
                             <br><br>
                         </p>
-                        <p style="font-size: 18px;float: right;margin-right: 72px;">
+                        <p style="font-size: 18px;float: right;margin-right: 72px;font-family: cursive;">
                             Our purpose is to serve all individuals who think out of the box.<br>
                             We try to remove the barrier between <br><strong style="font-size: 20px">"can we do or can't we" </strong><br>by giving services at affordable prices simultaneously maintaining its quality.
                         </p>
@@ -240,8 +247,6 @@
                                 <li >Best Quality</li>
                                 <br>
                                 <li >Responsive and Flexible team</li>
-                                <br>
-                                <li >Providing Employment</li>
                                 <br>
                                 <li >Dedicated developers</li>
                                 <br>
@@ -377,8 +382,8 @@
                             </div>
                             <div class="det">
                                 <div class="cont">
-                                    <h2 class="text-center">Brading</h2>
-                                    <p class="text-center">Brand Collaterals</p>
+                                    <h2 class="text-center portfoliostyle">Brading</h2>
+                                    <p class="text-center portfoliostyle1">Brand Collaterals</p>
                                 </div>
                                 <!--.cont -->
                             </div>
@@ -391,8 +396,8 @@
                             </div>
                             <div class="det">
                                 <div class="cont">
-                                    <h2>Graphics</h2>
-                                    <p>Character Designing</p>
+                                    <h2 class=" text-centerportfoliostyle">Graphics</h2>
+                                    <p class=" text-centerportfoliostyle1">Character Designing</p>
                                 </div>
                                 <!--.cont -->
                             </div>
@@ -405,8 +410,8 @@
                             </div>
                             <div class="det">
                                 <div class="cont">
-                                    <h2>Branding</h2>
-                                    <p>Visiting Card</p>
+                                    <h2 class=" text-centerportfoliostyle">Branding</h2>
+                                    <p class=" text-centerportfoliostyle1">Visiting Card</p>
                                 </div>
                                 <!--.cont -->
                             </div>
@@ -426,8 +431,8 @@
                             </div>
                             <div class="det">
                                 <div class="cont">
-                                    <h2 class="text-center">Graphics</h2>
-                                    <p class="text-center">Business card</p>
+                                    <h2 class="text-center portfoliostyle">Graphics</h2>
+                                    <p class="text-center portfoliostyle1">Business card</p>
                                 </div>
                                 <!--.cont -->
                             </div>
@@ -440,8 +445,8 @@
                             </div>
                             <div class="det">
                                 <div class="cont">
-                                    <h2>Web Development</h2>
-                                    <p></p>
+                                    <h2 class=" text-center portfoliostyle">Web Development</h2>
+                                    <p class=" text-center portfoliostyle1"></p>
                                 </div>
                                 <!--.cont -->
                             </div>
@@ -454,8 +459,8 @@
                             </div>
                             <div class="det">
                                 <div class="cont">
-                                    <h2>UI/UX</h2>
-                                    <p>Wire frames</p>
+                                    <h2 class="text-center portfoliostyle">UI/UX</h2>
+                                    <p class="text-center portfoliostyle1">Wire frames</p>
                                 </div>
                                 <!--.cont -->
                             </div>
@@ -472,7 +477,7 @@
                         <article class="tile is-child box box1">
                             <div class="imgBox">
                                 <video width="320px" height="244px" controls>
-                                    <source src="images/portfolio/video/4.mp4" type="video/mp4" >
+                                    <source src="images/portfolio/video/5.mp4" type="video/mp4" >
                                 </video>
                             </div>
                         </article>
@@ -490,7 +495,7 @@
                         <article class="tile is-child box box1">
                             <div class="imgBox">
                                 <video width="320px" height="244px" controls>
-                                    <source src="images/portfolio/video/3.mp4" type="video/mp4" >
+                                    <source src="images/portfolio/video/6.mp4" type="video/mp4" >
                                 </video>
                             </div>
                         </article>
@@ -500,13 +505,13 @@
             </div>
             <!--container-->
             <!--=====================================================================-->
-            <!-- <div class= "container contain" >
+             <div class= "container contain" >
                 <div class="tile is-ancestor">
                   <div class="tile is-parent">
                     <article class="tile is-child box box1">
                       <div class="imgBox">
                         <video width="320px" height="244px" controls>
-                              <source src="images/portfolio/video/2.mp4" type="video/mp4" >
+                              <source src="images/portfolio/video/7.mp4" type="video/mp4" >
                         </video>
                       </div>
                     </article>
@@ -515,7 +520,7 @@
                     <article class="tile is-child box box1">
                       <div class="imgBox">
                         <video width="320px" height="244px" controls>
-                              <source src="images/portfolio/video/1.mp4" type="video/mp4" >
+                              <source src="images/portfolio/video/8.mp4" type="video/mp4" >
                         </video>
                       </div>
                     </article>
@@ -525,12 +530,13 @@
                     <article class="tile is-child box box1">
                       <div class="imgBox">
                         <video width="320px" height="244px" controls>
-                              <source src="images/portfolio/video/3.mp4" type="video/mp4" >
+                              <source src="images/portfolio/video/9.mp4" type="video/mp4" >
                         </video>
                       </div>
                     </article>
                   </div>
-                </div>-->
+                </div>
+              </div>
             <!-- container   -->
             <!--=========================================================-->
             <div class= "container contain" >
@@ -542,8 +548,8 @@
                             </div>
                             <div class="det">
                                 <div class="cont">
-                                    <h2 class="text-center">Photography</h2>
-                                    <p class="text-center"></p>
+                                    <h2 class="text-center portfoliostyle">Photography</h2>
+                                    <p class="text-center portfoliostyle1"></p>
                                 </div>
                                 <!--.cont -->
                             </div>
@@ -556,8 +562,8 @@
                             </div>
                             <div class="det">
                                 <div class="cont">
-                                    <h2>Photography</h2>
-                                    <p></p>
+                                    <h2 class=" text-center portfoliostyle">Photography</h2>
+                                    <p class=" text-center portfoliostyle1"> </p>
                                 </div>
                                 <!--.cont -->
                             </div>
@@ -570,8 +576,8 @@
                             </div>
                             <div class="det">
                                 <div class="cont">
-                                    <h2>Photography</h2>
-                                    <p></p>
+                                    <h2 class="text-center portfoliostyle">Photography</h2>
+                                    <p class=" text-center portfoliostyle1"></p>
                                 </div>
                                 <!--.cont -->
                             </div>
@@ -581,9 +587,58 @@
                 <!-- ancestor -->
             </div>
             <!--container-->
-            <!--=====================================================================-->
+             <!--=========================================================-->
+            <div class= "container contain" >
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <article class="tile is-child box box1">
+                            <div class="imgBox">
+                                <img src="images/portfolio/blue monster tilted.jpg" class="img3">
+                            </div>
+                            <div class="det">
+                                <div class="cont">
+                                    <h2 class="text-center portfoliostyle">Graphics</h2>
+                                    <p class="text-center portfoliostyle1">Charecter Designing</p>
+                                </div>
+                                <!--.cont -->
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box box1">
+                            <div class="imgBox">
+                                <img src="images/portfolio/girl 5.jpg" class="img3">
+                            </div>
+                            <div class="det">
+                                <div class="cont">
+                                    <h2 class=" text-center portfoliostyle">Graphics</h2>
+                                    <p class=" text-center portfoliostyle1">Charecter Designing </p>
+                                </div>
+                                <!--.cont -->
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box box1">
+                            <div class="imgBox">
+                                <img src="images/portfolio/photo5.png" class="img3">
+                            </div>
+                            <div class="det">
+                                <div class="cont">
+                                    <h2 class="text-center portfoliostyle">Photography</h2>
+                                    <p class=" text-center portfoliostyle1"></p>
+                                </div>
+                                <!--.cont -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- ancestor -->
+            </div>
+            <!--container-->
         </section>
         <!-- end of portfolio -->
+        <!--=====================================================================-->
         <br><br><br>
         <!-- contact us -->
         <section id="signup" class="is-hidden-mobile">
@@ -678,6 +733,22 @@
         </section>
         <!--==============================================================-->
         <!-- end of contact us -->
+        <script>
+          window.onscroll = function() {myFunction()};
+
+          function myFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+              var logo = document.getElementById('myP');
+              logo.src = "images/logo/2i.png";
+              
+            } else {
+              var logo =document.getElementById('myP');
+              logo.src = "images/logo/2.png";
+            }
+          }
+
+          
+        </script>
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <!-- Plugin JavaScript -->
