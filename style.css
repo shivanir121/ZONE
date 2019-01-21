@@ -362,8 +362,26 @@ body
 				  	text-align: justify;
 				  	font-size: 17px;
 				  }
+				  /*social links*/
+				  .icon-bar {
+						  position: fixed;
+						  top: 50%;
+						  -webkit-transform: translateY(-50%);
+						  -ms-transform: translateY(-50%);
+						  transform: translateY(-50%);
+						}
 
-/* Style the social media icons with color, if you want */
+						/* Style the icon bar links */
+						.icon-bar .social {
+						  display: block;
+						  text-align: center;
+						  padding: 16px;
+						  transition: all 0.3s ease;
+						  color: white;
+						  font-size: 20px;
+						}
+
+						/* Style the social media icons with color, if you want */
 						.icon-bar .social:hover {
 						  background-color:  #fb8b27;
 						}
@@ -393,7 +411,9 @@ body
 							background: black;
 						    color: white;
 						}
-/*for mobile version*/
+
+
+						/*for mobile version*/
 						/* footer social icons */
 ul.social-network {
   list-style: none;
@@ -498,6 +518,3 @@ a.socialIcon:hover,
 	width: 37px;
     height: 38px;
 }
-
-
-
