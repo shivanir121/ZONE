@@ -489,8 +489,14 @@ a.socialIcon:hover,
   transition: all 0.8s;
 }
 
-.soc {
+.soc,.soc1 {
   background-color: black;
+}
+
+.social-circle li .soc1
+{
+	width: 37px;
+    height: 38px;
 }
 
 
