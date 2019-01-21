@@ -362,3 +362,35 @@ body
 				  	text-align: justify;
 				  	font-size: 17px;
 				  }
+
+/* Style the social media icons with color, if you want */
+						.icon-bar .social:hover {
+						  background-color:  #fb8b27;
+						}
+
+						.facebook {
+						  background: black;
+						  color: white;
+						}
+
+						.twitter {
+						  background:black;
+						  color: white;
+						}
+
+					
+						.linkedin {
+						  background: black;
+						  color: white;
+						}
+
+						.youtube {
+						  background: black;
+						  color: white;
+						}
+						.instagram
+						{
+							background: black;
+						    color: white;
+						}
+
